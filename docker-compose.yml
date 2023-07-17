@@ -1,13 +1,14 @@
-version: 1
+version: '3'
 
 services:
-  jupyter-notebooks:
-      networks:
-        - playground
-      build: ./jupyter/
-      ports:
-        - "8888:8888"
-      volumes:
-        - ./data: ./data
-        - ./jupyter/notebooks: ./jupyter/notebooks
-      container_name: jupyter-notebooks
+  jupyter-notebook:
+    build: ./jupyter/
+    ports:
+      - 8888:8888
+    environment:
+      - JUPYTER_TOKEN=  
+    volumes:
+      - ./data:/home/jovyan/data
+      - ./jupyter/notebooks:/home/jovyan/notebook
+
+    
