@@ -15,4 +15,6 @@ The test code is located in the folder:
     ./notebooks/BigDataRoadAccident.ipynb
 
 ## Running Python script
-If you want to execute the test code in a single script, you can navigate to the 'src' folder and run the Python script called 'test_ortu.py'.
+If you want to execute the test code in a single script, you can navigate to the 'src' folder and run the Python script called 'test_ortu.py' with the command:
+
+    python test_ortu.py
