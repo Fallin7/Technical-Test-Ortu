@@ -9,3 +9,7 @@ To start the docker:
 After the initialization of the docker image, the notebook can be reached at:
     
     http://localhost:8888
+
+The test code is located in the folder: 
+
+    ./notebooks/BigDataRoadAccident.ipynb
